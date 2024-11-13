@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Запись</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="m-10">
+        <li><a href="/">Главная</a></li>
+        <li>Отзывы</li>
+        <li class="font-bold"><a href="/form">Запись</a></li>
+        <li>Адреса</li>
+        <li><a href="/contacts">Контакты</a></li>
+      </ul>
+      <p class="m-10">Клиника <strong>"Лучше чем ничего"</strong></p>
+    </nav>
+    
+    <h2 class="text-3xl text-center m-5"><strong>Рискните записаться</strong></h2>
+    <div class="form-container">
+      <form>
+        <div class="form-item">
+          <label>ФИО</label>
+          <input type="text" name="fullName" placeholder="Ваше имя" required>
+        </div>
+        <div class="form-item">
+          <label>Email</label>
+          <input type="email" name="email" placeholder="Ваш Email" required>
+        </div>
+        <div class="form-item">
+          <label>Телефон</label>
+          <input type="phone" name="phone" placeholder="Ваш телефон">
+        </div>
+        <div class="form-item">
+          <label>Дата</label>
+          <input type="date" name="date">
+        </div>
+        <div class="form-item">
+          <label>Выберите врача</label>
+          <select id="doctor" name="doctor" required>
+            <option>Ветеринар</option>
+            <option>Пластический хирург</option>
+            <option>Патологоанатом</option>
+            <option>Психиатр</option>
+            <option>Цирюльник</option>
+            <option>Чумной доктор</option>
+            <option>Слесарь</option>
+            <option>Знахарь</option>
+            <option>Гомеопат</option>
+            <option>Массажист</option>
+          </select>
+        </div>
+        <div class="form-item">
+          <button type="submit">Записаться</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

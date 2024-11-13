@@ -1,0 +1,42 @@
+:root {
+  margin: 20px;
+  padding: 0px;
+  --night: #0a100dff;
+  --ash-gray: #b9baa3ff;
+  --timberwolf: #d6d5c9ff;
+  --auburn: #a22c29ff;
+  --burnt-umber: #902923ff;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  margin: 10px;
+  padding: 0px;
+  background-color: var(--timberwolf);
+}
+
+nav {
+  font-size: 18px;
+  height: 80px;
+  background-color: var(--ash-gray);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0 0 20px 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav p {
+    margin: 40px;
+}
